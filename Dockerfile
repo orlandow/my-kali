@@ -13,10 +13,16 @@ RUN apt-get -y install zsh zsh-syntax-highlighting zsh-autosuggestions
 # RUN wget --no-check-certificate https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
 
 # install kali top 10 and others
-RUN apt-get -y install kali-tools-top10 iputils-ping man-db exploitdb wordlists kali-tools-passwords nikto netcat whois wpscan seclists
+RUN apt-get -y install kali-tools-top10 kali-tools-passwords
+
+# install other pentesting tools
+RUN apt-get -y install iputils-ping man-db exploitdb gobuster wordlists nikto netcat whois wpscan seclists
 
 # install languages and frameworks
 RUN apt-get -y install python3-pip nodejs php npm
+
+# install ngrok
+RUN npm i -g ngrok
 
 # install tools and editors
 RUN apt-get -y install vim
