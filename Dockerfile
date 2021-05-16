@@ -21,4 +21,6 @@ RUN apt-get -y install python3-pip nodejs php npm
 # install tools and editors
 RUN apt-get -y install vim
 
+WORKDIR /root
+
 ENTRYPOINT ["/bin/zsh"]
