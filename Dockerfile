@@ -25,7 +25,7 @@ RUN apt-get -y install python3-pip nodejs php npm
 RUN npm i -g ngrok
 
 # install tools and editors
-RUN apt-get -y install vim
+RUN apt-get -y install vim tmux
 
 WORKDIR /root
 
