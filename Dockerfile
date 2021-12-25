@@ -16,7 +16,7 @@ RUN apt-get -y install zsh zsh-syntax-highlighting zsh-autosuggestions
 RUN apt-get -y install kali-tools-top10 kali-tools-passwords
 
 # install other pentesting tools
-RUN apt-get -y install iputils-ping man-db exploitdb gobuster wordlists nikto netcat whois wpscan seclists
+RUN apt-get -y install iputils-ping man-db exploitdb gobuster wordlists nikto whois wpscan seclists netcat-traditional
 
 # install languages and frameworks
 RUN apt-get -y install python3-pip nodejs php npm
